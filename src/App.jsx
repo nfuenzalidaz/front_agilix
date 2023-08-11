@@ -24,6 +24,8 @@ import Reporte from "./Componentes/Views/General/Comparacion_de_ventas/Reporte/R
 import { fetchProducts } from "./Redux/productSlice";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
+import axios from "axios";
+axios.defaults.baseURL = "https://agilix-pr.vercel.app/";
 
 function App() {
   const dispatch = useDispatch();
