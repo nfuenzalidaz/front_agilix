@@ -25,7 +25,7 @@ import { fetchProducts } from "./Redux/productSlice";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import axios from "axios";
-axios.defaults.baseURL = "https://agilix-pr.vercel.app/";
+axios.defaults.baseURL = "https://test-server-6xen.onrender.com/";
 
 function App() {
   const dispatch = useDispatch();
