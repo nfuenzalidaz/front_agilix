@@ -52,10 +52,7 @@ const AñadirProducto = () => {
 
       const formDataObject = Object.fromEntries(formData);
 
-      const response = await axios.post(
-        `http://localhost:3001/productos`,
-        formDataObject
-      );
+      const response = await axios.post(`/productos`, formDataObject);
 
       //Actualiza el estado global
       dispatch(fetchProducts());
