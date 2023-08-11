@@ -19,10 +19,7 @@ const Clientes = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post(
-        "http://localhost:3001/clientes",
-        input
-      );
+      const response = await axios.post("/clientes", input);
 
       setShowSuccessMessage(true);
 
